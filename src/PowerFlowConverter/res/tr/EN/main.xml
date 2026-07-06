@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<DevRes>
+	<Translations>
+		<!-- Application -->
+		<Res id="AppTitle"              tr="Power Flow Converter: Polar Coordinates"/>
+		<Res id="AboutText"             tr="Converts MATPOWER .m case files to dTwin .dmodl format (polar coordinates). Course: SREES."/>
+		<Res id="ConvertMenu"           tr="Conversion"/>
+
+		<!-- Menu / Toolbar actions -->
+		<Res id="StartConversion"       tr="Start Conversion"/>
+		<Res id="StartConversionTT"     tr="Start MATPOWER to .dmodl conversion"/>
+		<Res id="StopConversion"        tr="Stop"/>
+		<Res id="StopConversionTT"      tr="Stop the active conversion"/>
+		<Res id="ClearResults"          tr="Clear"/>
+		<Res id="ClearResultsTT"        tr="Clear all results and log"/>
+		<Res id="About"                 tr="About"/>
+		<Res id="Quit"                  tr="Quit"/>
+
+		<!-- Tab titles -->
+		<Res id="TabInput"              tr="Input / Options"/>
+		<Res id="TabProgress"           tr="Progress"/>
+		<Res id="TabResults"            tr="Results"/>
+
+		<!-- ViewInput -->
+		<Res id="InputFileLabel"        tr="MATPOWER input file (.m):"/>
+		<Res id="OutputFileLabel"       tr="Output file (.dmodl):"/>
+		<Res id="Browse"                tr="Browse..."/>
+		<Res id="OptionsSection"        tr="Conversion options:"/>
+		<Res id="OptFlatStart"          tr="Flat start (use slack values as initial guess)"/>
+		<Res id="OptIncludeLimits"      tr="Include PV bus Q-limits"/>
+		<Res id="OptZeroLoads"          tr="Zero out all loads (test mode)"/>
+		<Res id="SelectInputFile"       tr="Select MATPOWER input file"/>
+		<Res id="SelectOutputFile"      tr="Save output .dmodl file"/>
+		<Res id="MatpowerFilter"        tr="MATPOWER files (*.m)"/>
+		<Res id="DmodlFilter"           tr="dTwin model files (*.dmodl)"/>
+		<Res id="AllFilesFilter"        tr="All files (*.*)"/>
+
+		<!-- ViewProgress -->
+		<Res id="ProgressTitle"         tr="Conversion progress:"/>
+		<Res id="LogTitle"              tr="Conversion log:"/>
+		<Res id="ConversionStarted"     tr="Starting conversion..."/>
+		<Res id="ConversionStopped"     tr="Conversion stopped by user."/>
+
+		<!-- ViewResults -->
+		<Res id="NetworkSection"        tr="Network statistics:"/>
+		<Res id="ResBuses"              tr="Total buses:"/>
+		<Res id="ResGens"               tr="Generators (online):"/>
+		<Res id="ResBranches"           tr="Branches (online):"/>
+		<Res id="ResPQBuses"            tr="PQ buses:"/>
+		<Res id="ResPVBuses"            tr="PV buses:"/>
+		<Res id="ResSlacks"             tr="Slack buses:"/>
+		<Res id="OutputSection"         tr="Output file:"/>
+		<Res id="ResOutputPath"         tr="Path:"/>
+		<Res id="CopyResults"           tr="Copy Path to Clipboard"/>
+
+		<!-- Alerts -->
+		<Res id="AlreadyRunning"        tr="A conversion is already in progress."/>
+		<Res id="NoFilesSelected"       tr="Please select input and output files first."/>		<Res id="AboutTT"    tr="About this application"/>
+	</Translations>
+</DevRes>

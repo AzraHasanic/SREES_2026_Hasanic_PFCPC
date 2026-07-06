@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<DevRes>
+	<Images>
+		<Res id="start"  path="Common/Icons/zoomIn64.png"/>
+		<Res id="stop"   path="Common/Icons/zoomOut64.png"/>
+		<Res id="clear"  path="Common/Icons/menuA_32.png"/>
+	</Images>
+	<Symbols>
+	</Symbols>
+</DevRes>

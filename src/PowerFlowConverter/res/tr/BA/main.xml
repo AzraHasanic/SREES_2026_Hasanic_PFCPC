@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<DevRes>
+	<Translations>
+		<!-- Aplikacija -->
+		<Res id="AppTitle"              tr="Konvertor tokova snaga: polarne koordinate"/>
+		<Res id="AboutText"             tr="Konvertuje MATPOWER .m datoteke u dTwin .dmodl format (polarne koordinate). Predmet: SREES."/>
+		<Res id="ConvertMenu"           tr="Konverzija"/>
+
+		<!-- Meni / Toolbar -->
+		<Res id="StartConversion"       tr="Pokreni konverziju"/>
+		<Res id="StartConversionTT"     tr="Pokreni konverziju MATPOWER → .dmodl"/>
+		<Res id="StopConversion"        tr="Zaustavi"/>
+		<Res id="StopConversionTT"      tr="Zaustavi aktivnu konverziju"/>
+		<Res id="ClearResults"          tr="Obriši"/>
+		<Res id="ClearResultsTT"        tr="Obriši sve rezultate i log"/>
+		<Res id="About"                 tr="O aplikaciji"/>
+		<Res id="Quit"                  tr="Izlaz"/>
+
+		<!-- Naslovi tabova -->
+		<Res id="TabInput"              tr="Unos / Opcije"/>
+		<Res id="TabProgress"           tr="Tok konverzije"/>
+		<Res id="TabResults"            tr="Rezultati"/>
+
+		<!-- ViewInput -->
+		<Res id="InputFileLabel"        tr="MATPOWER ulazna datoteka (.m):"/>
+		<Res id="OutputFileLabel"       tr="Izlazna datoteka (.dmodl):"/>
+		<Res id="Browse"                tr="Pretraži..."/>
+		<Res id="OptionsSection"        tr="Opcije konverzije:"/>
+		<Res id="OptFlatStart"          tr="Flat start (početne vrijednosti = čvor napajanja)"/>
+		<Res id="OptIncludeLimits"      tr="Uključi Q-ograničenja PV čvorova"/>
+		<Res id="OptZeroLoads"          tr="Nuliraj sve potrošnje (testni mod)"/>
+		<Res id="SelectInputFile"       tr="Odaberi MATPOWER ulaznu datoteku"/>
+		<Res id="SelectOutputFile"      tr="Snimi izlaznu .dmodl datoteku"/>
+		<Res id="MatpowerFilter"        tr="MATPOWER datoteke (*.m)"/>
+		<Res id="DmodlFilter"           tr="dTwin model datoteke (*.dmodl)"/>
+		<Res id="AllFilesFilter"        tr="Sve datoteke (*.*)"/>
+
+		<!-- ViewProgress -->
+		<Res id="ProgressTitle"         tr="Napredak konverzije:"/>
+		<Res id="LogTitle"              tr="Log konverzije:"/>
+		<Res id="ConversionStarted"     tr="Pokretanje konverzije..."/>
+		<Res id="ConversionStopped"     tr="Konverzija zaustavljena od strane korisnika."/>
+
+		<!-- ViewResults -->
+		<Res id="NetworkSection"        tr="Statistika mreže:"/>
+		<Res id="ResBuses"              tr="Ukupno čvorova:"/>
+		<Res id="ResGens"               tr="Generatori (aktivni):"/>
+		<Res id="ResBranches"           tr="Grane (aktivne):"/>
+		<Res id="ResPQBuses"            tr="PQ čvorovi:"/>
+		<Res id="ResPVBuses"            tr="PV čvorovi:"/>
+		<Res id="ResSlacks"             tr="Slack čvorovi:"/>
+		<Res id="OutputSection"         tr="Izlazna datoteka:"/>
+		<Res id="ResOutputPath"         tr="Putanja:"/>
+		<Res id="CopyResults"           tr="Kopiraj putanju u clipboard"/>
+
+		<!-- Upozorenja -->
+		<Res id="AlreadyRunning"        tr="Konverzija je već u toku."/>
+		<Res id="NoFilesSelected"       tr="Molimo odaberite ulaznu i izlaznu datoteku."/>		<Res id="AboutTT"    tr="O ovoj aplikaciji"/>
+	</Translations>
+</DevRes>
