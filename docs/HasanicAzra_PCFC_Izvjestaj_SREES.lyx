@@ -1,0 +1,4297 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  breaklines=true,               % Automatsko prelamanje linija
+  breakatwhitespace=false,       % Prelama linije čak i unutar dugih riječi/stringova
+  frame=single,                  % Okvir oko koda
+  backgroundcolor=\color[gray]{0.97}, % Vrlo blaga siva pozadina
+  basicstyle=\ttfamily\small,     % Monospace font, malo manja slova
+  showstringspaces=false,        % UKLANJA čudne crtice unutar navodnika (" ")
+  showspaces=false,              % UKLANJA čudne crtice za obične razmake
+  keepspaces=true                % Zadržava točan broj razmaka, ali ih ne crta
+}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children no
+\language bosnian
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index Index
+\shortcut idx
+\color #008080
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+includegraphics[width=0.35
+\backslash
+textwidth]{etf-logo.png} 
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large 
+\backslash
+bfseries UNIVERZITET U SARAJEVU} 
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large 
+\backslash
+bfseries ELEKTROTEHNIČKI FAKULTET} 
+\backslash
+
+\backslash
+[0.1cm]
+\end_layout
+
+\begin_layout Plain Layout
+{ODSJEK ZA AUTOMATIKU I ELEKTRONIKU} 
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+noindent
+\backslash
+rule{
+\backslash
+textwidth}{1.5pt} 
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+LARGE 
+\backslash
+bfseries Konvertor tokova snaga:
+ polarne koordinate} 
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+noindent
+\backslash
+rule{
+\backslash
+textwidth}{1.5pt} 
+\backslash
+
+\backslash
+[0.6cm]
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large SEMINARSKI RAD} 
+\backslash
+
+\backslash
+[2.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large 
+\backslash
+textbf{Student:} Hasanić Azra} 
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large 
+\backslash
+textbf{Broj indeksa:} 19553} 
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large 
+\backslash
+textbf{Predmet:} Strukture i režimi rada elektroenergetskih sistema} 
+\backslash
+
+\backslash
+[0.2cm]
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large 
+\backslash
+textbf{Akademska godina:} 2025/2026.}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+vspace{1.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+{
+\backslash
+large Sarajevo,
+ 2026.}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Uvod
+\end_layout
+
+\begin_layout Standard
+Proračun tokova snaga je jedan od najvažnijih aspekata analize elektroenergetskih sistema.
+ Omogućava odredbu statičkog stanja mreže,
+ to jeste proračun napona svih čvorova,
+ faznih uglova napona,
+ te tokova aktivnih i reaktivnih snaga kroz elemente mreže.
+ Rezultantni podaci su neophodni za analizu rada sistema,
+ razvoj i upravljanje istim.
+\end_layout
+
+\begin_layout Standard
+U svrhu opisa i analize elektroenergetskih mreža moguće je koristiti različite software-ske alate među kojima je i MATPOWER,
+ koji omogućava definisanje modela mreže i proračune pomoću MATLAB datoteka,
+ koje sadrže podatke poput onih o sabirnicama,
+ granama i generatorima mreže.
+\end_layout
+
+\begin_layout Standard
+Okruženje dTwin,
+ namijenjeno za modeliranje i simulaciju statičkih i dinamičkih sistema,
+ koristi vlastiti format modela (.dmodl),
+ te ne podržava direktnu upotrebu .m file-ova kao izvora podataka.
+ 
+\end_layout
+
+\begin_layout Standard
+Budući da je neophodnu konverziju formata podataka nepraktično vršiti ručno u slučaju složenih sistema,
+ razvijen je konvertor koji datoteke .m formata pretvara u odgovarajući .dmodl format,
+ sa formiranim matemetičkim modelom mreže spremnim za simulaciju i proračun.
+\end_layout
+
+\begin_layout Standard
+Glavni cilj ovog rada jeste prikazati matematičko modeliranje elektroenergetskih sistema u polarnim koordinatama,
+ te opisati implementaciju konvertora u obliku multithreaded plugin-a sa grafičkim interface-om za dTwin okruženje.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Proračun tokova snaga – teorijske osnove i matematički model
+\end_layout
+
+\begin_layout Standard
+Proračun tokova snaga podrazumijeva rješavanje sistema nelinearnih algebarskih jednačina s ciljem odredbe stacionarnog stanja elektroenergetske mreže.
+ Pri zadanim uvjetima proizvodnje i potrošnje energije,
+ potrebno je odrediti napone na svim čvorovima mreže u formi modula i faznog ugla veličine,
+ na osnovu čega je moguće računati tokove snaga kroz sve elemente sistema.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cite{predavanja}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+U elektroenergetskom sistemu čvorovi se klasificiraju u tri osnovne grupe na osnovu poznatih i nepoznatih veličina:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Slack (balansni) čvor:} referentni čvor kojem su zadani magnituda napona $V$ i fazni ugao $
+\backslash
+delta$ (obično $
+\backslash
+delta = 0^
+\backslash
+circ$).
+ Ovaj čvor balansira gubitke aktivne i reaktivne snage u mreži.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{PV (generatorski) čvorovi:} Čvorovi u kojima su poznati aktivna snaga injektiranja $P$ i magnituda napona $V$.
+ Traže se fazni ugao $
+\backslash
+delta$ i reaktivna snaga $Q$.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{PQ (potrošački) čvorovi:} Čvorovi u kojima su poznati aktivna i reaktivna snaga potrošnje (odnosno neto injektiranja $P$ i $Q$).
+ Traže se magnituda napona $V$ i fazni ugao $
+\backslash
+delta$.
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Osnovni pojmovi i veličine korištene pri realizaciji proračuna:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{|l|l|l|}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Simbol} & 
+\backslash
+textbf{Značenje veličine} & 
+\backslash
+textbf{Jedinica} 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$P_{gen,i}$ & Aktivna snaga proizvodnje u čvoru $i$ & $
+\backslash
+text{MW}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$Q_{gen,i}$ & Reaktivna snaga proizvodnje u čvoru $i$ & $
+\backslash
+text{MVAr}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$P_{load,i}$ & Aktivna snaga potrošnje u čvoru $i$ & $
+\backslash
+text{MW}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$Q_{load,i}$ & Reaktivna snaga potrošnje u čvoru $i$ & $
+\backslash
+text{MVAr}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$P_i^{
+\backslash
+text{net}}$ & Neto injektirana aktivna snaga u čvoru $i$ & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$Q_i^{
+\backslash
+text{net}}$ & Neto injektirana reaktivna snaga u čvoru $i$ & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$S_{
+\backslash
+text{base}}$ & Bazna prividna snaga sistema & $
+\backslash
+text{MVA}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$V_i$ & Modul (iznos) napona čvora $i$ & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$
+\backslash
+delta_i$ & Fazni ugao napona čvora $i$ & $
+\backslash
+text{rad,
+ } ^
+\backslash
+circ$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$r$ & Otpornost grane (voda ili transformatora) & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$x$ & Reaktansa grane (voda ili transformatora) & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$b_{sh}$ & Ukupna shunt susceptansa grane & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$y_{ik}$ & Serijska admitansa grane između čvorova $i$ i $k$ & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$Y_{ii}$ & Sopstvena admitansa čvora $i$ (dijagonalni element) & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$Y_{ik}$ & Međusobna admitansa između čvorova $i$ i $k$ & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$|Y_{ik}|$ & Modul admitanse $Y_{ik}$ & $
+\backslash
+text{p.u.}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$
+\backslash
+varphi_{ik}$ & Fazni ugao admitanse $Y_{ik}$ & $
+\backslash
+text{rad,
+ } ^
+\backslash
+circ$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$
+\backslash
+text{tap}$ & Modul regulacije prenosnog odnosa transformatora & $-$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$
+\backslash
+phi$ & Ugao faznog pomaka transformatora & $
+\backslash
+text{rad,
+ } ^
+\backslash
+circ$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$
+\backslash
+tau$ & Kompleksni prenosni odnos transformatora & $-$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$G_s,
+ B_s$ & Shunt konduktansa i susceptansa u čvoru & $
+\backslash
+text{MW,
+ MVAr}$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+$
+\backslash
+epsilon$ & Tolerancija (kriterij konvergencije proračuna) & $-$ 
+\backslash
+
+\backslash
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Formiranje matrice admitansi sistema
+\end_layout
+
+\begin_layout Standard
+Osnova za formiranje jednačina balansa snaga jeste matrica admitansi sistema,
+ označena kao Ybus.
+\end_layout
+
+\begin_layout Standard
+Za svaku granu između čvorova i i j definiše se serijska admitansa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{ik}=\frac{1}{r+jx}=\frac{r}{r^{2}+x^{2}}-j\frac{x}{r^{2}+x^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ukoliko grana posjeduje shunt susceptansu u vidu poput kapacitivnosti vodova,
+ ona se prema ekvivalentnom π modelu polovi i dodaje na krajeve grane:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b_{sh,i}=b_{sh,k}=\frac{b_{sh}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+U slučaju transformatora sa kompleksnim prenosnim odnosom τ = tap* e^(jΦ),
+ gdje je tap magnituda regulacije,
+ a Φ ugao faznog pomaka,
+ elementi matrice admitancija se računaju na sljedeći način:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau=\text{tap}\cdot e^{j\phi}=\text{tap}\cdot\cos(\phi)+j\cdot\text{tap}\cdot\sin(\phi)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y^{\text{from}}_{ii}=\frac{y_{ik}+j\frac{b_{sh}}{2}}{\tau\cdot\tau^{*}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y^{\text{to}}_{ii}=y_{ik}+j\frac{b_{sh}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{ik}=\frac{-y_{ik}}{\tau^{*}},Y_{ki}=\frac{-y_{ik}}{\tau}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Konačni dijagonalni i vandijagonalni elementi matrice Ybus se formiraju sumiranjem svih grana povezanih sa čvorom i,
+ uz dodatak sopstvene shunt admitancije čvora:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{sh,i}=\frac{G_{s}+jB_{s}}{S_{\text{base}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{ii}=\sum_{k\neq i}Y^{\text{grane}}_{ii}+y_{sh,i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{ik}=-Y^{\text{grane}}_{ik}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Jednačine balansa snaga u polarnim koordinatama
+\end_layout
+
+\begin_layout Standard
+U polarnim koordinatama,
+ napon čvora i se predstavlja kao 
+\begin_inset Formula $Y_{i}=|Y_{i}|\angleδ_{i}$
+\end_inset
+
+,
+ dok se elementi matrice admitancija predstavljaju preko svojih magnituda i uglova:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{ik}=|Y_{ik}|\angle\varphi_{ik}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+|Y_{ik}|=\sqrt{G^{2}_{ik}+B^{2}_{ik}},\varphi_{ik}=\arctan\left(\frac{B_{ik}}{G_{ik}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Razdvajanjem kompleksnog izraza za injektiranu prividnu snagu na imaginarni i realni dio,
+ formiraju se jednačine balansa snaga u polarnom obliku,
+ koje moraju biti zadovoljene na odgovarajućim čvorovima:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{i}=P_{i}+jQ_{i}=V_{i}\cdot I^{*}_{i}=V_{i}\sum_{k}(Y_{ik}V_{k})^{*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{i}=|Y_{ii}|V^{2}_{i}\cos(\varphi_{ii})+V_{i}\sum_{k\neq i}|Y_{ik}|V_{k}\cos(\delta_{i}-\varphi_{ik}-\delta_{k})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Q_{i}=-|Y_{ii}|V^{2}_{i}\sin(\varphi_{ii})+V_{i}\sum_{k\neq i}|Y_{ik}|V_{k}\sin(\delta_{i}-\varphi_{ik}-\delta_{k})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Numerički algoritam rješavanja
+\end_layout
+
+\begin_layout Standard
+Konvertor kreiran u sklopu ovog rada ne rješava direktno ove jednačine,
+ nego ih generiše unutar .dmodl datoteke,
+ čime dTwin platforma dobija matematički model.
+ Okruženje dTwin potom koristi Newton-Raphsonovu metodu za rješavanje sistema nelinearnih jednačina oblika 
+\begin_inset Formula $\ensuremath{\mathbf{f}(\mathbf{x})=0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Iterativni postupak računaja se vrši prema formuli:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{x}^{(k+1)}=\mathbf{x}^{(k)}-\mathbf{J}^{-1}\mathbf{f}(\mathbf{x}^{(k)})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{J}=\begin{bmatrix}\frac{\partial\mathbf{P}}{\partial\boldsymbol{\delta}} & \frac{\partial\mathbf{P}}{\partial\mathbf{V}}\\
+\frac{\partial\mathbf{Q}}{\partial\boldsymbol{\delta}} & \frac{\partial\mathbf{Q}}{\partial\mathbf{V}}
+\end{bmatrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Za ostvarivanje konvergencije pri proračunu potrebna je dobra aproksimacija početnih vrijednosti,
+ zbog čega je korištena 
+\begin_inset Quotes eld
+\end_inset
+
+Flat start
+\begin_inset Quotes erd
+\end_inset
+
+ inicijalizacija vrijednosti napona uglova,
+ te kriterij konvergencije vrijednosti 
+\begin_inset Formula $\epsilon=10^{-6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Korišteni softverski alati
+\end_layout
+
+\begin_layout Standard
+Za implementaciju ovog projekta odabran je Visual Studio IDE koji omogućava debugging,
+ praćenje memorije kao i rada sa više niti (thread-ova) u realnom vremenu.
+ Budući da je jedan od glavnih zahtjeva projekta bio da bude funkcionalan na različitim operativnim sistemima,
+ kreiran i konfigurisan je kroz CMake,
+ koji je dodatno omogućio upotrebu biblioteka i funkcija iz natID repozitorija i paketa
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cite{natid}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Struktura MATPOWER (.m) datoteke
+\end_layout
+
+\begin_layout Standard
+Za definisanje energetske mreže,
+ MATPOWER 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cite{matpower}
+\end_layout
+
+\end_inset
+
+ koristi standardne MATLAB skripte.
+ Podaci su organizovani u obliku globalnih matrica,
+ od kojih su za proračun tokova snaga ključne tri:
+ bus,
+ gen i branch,
+ uz definisanje bazne snage sistema preko varijable mpc.baseMVA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+Svaki red u 
+\backslash
+textbf{matrici čvorova} predstavlja jedan čvor (sabirnicu) u sistemu:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 1 ($bus
+\backslash
+_i$):} Jedinstveni identifikacioni broj čvora (ID).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 2 ($type$):} Tip čvora ($1 = 
+\backslash
+text{PQ čvor}$,
+ $2 = 
+\backslash
+text{PV čvor}$,
+ $3 = 
+\backslash
+text{Slack čvor}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 3 ($Pd$):} Aktivna snaga potrošnje u čvoru ($
+\backslash
+text{MW}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 4 ($Qd$):} Reaktivna snaga potrošnje u čvoru ($
+\backslash
+text{MVAr}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 5 ($Gs$),
+ Kolona 6 ($Bs$):} Konduktansa i susceptansa shunta čvora ($
+\backslash
+text{MW}$ i $
+\backslash
+text{MVAr}$ pri naponu od $1.0
+\backslash
+text{ p.u.}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 8 ($Vm$):} Početni modul napona ($
+\backslash
+text{p.u.}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 9 ($Va$):} Početni fazni ugao napona (u stepenima).
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Matrica generatora (mpc.gen)}:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 1 ($bus$):} ID čvora na koji je generator priključen.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 2 ($Pg$):} Izlazna aktivna snaga generatora ($
+\backslash
+text{MW}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 3 ($Qg$):} Izlazna reaktivna snaga generatora ($
+\backslash
+text{MVAr}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 6 ($Vg$):} Zadani (kontrolisani) napon generatora ($
+\backslash
+text{p.u.}$).
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Matrica grana (mpc.branch)} definiše prenosne vodove i transformatore koji spajaju čvorove:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 1 ($f
+\backslash
+_bus$),
+ Kolona 2 ($t
+\backslash
+_bus$):} ID početnog (``from'') i krajnjeg (``to'') čvora.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 3 ($r$):} Otpornost grane ($
+\backslash
+text{p.u.}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 4 ($x$):} Reaktansa grane ($
+\backslash
+text{p.u.}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 5 ($b$):} Ukupna susceptansa punjenja vodova ($
+\backslash
+text{p.u.}$).
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 9 ($tap$):} Prenosni odnos (izvod) transformatora.
+ Ako je vrijednost $0$ ili $1$,
+ grana se tretira kao obični vod.
+ Ako je različita od $1$,
+ riječ je o transformatoru sa promjenljivim izvodom.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kolona 10 ($shift$):} Ugao faznog pomaka transformatora (u stepenima).
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Struktura dTwin (.dmodl) datoteke
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+dTwin platforma 
+\backslash
+cite{dtwin} koristi 
+\backslash
+texttt{.dmodl} format zasnovan na deklarativnom opisivanju sistema nelinearnih jednačina (NLE).
+ Datoteka se sastoji iz nekoliko dijelova koje konvertor mora sekvencijalno generisati.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Zaglavlje modela}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Model se otvara deklaracijom tipa,
+ domena i tolerancije rješavanja.
+ konvertor ovdje eksplicitno postavlja parametre nelinearnog solvera:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+Model [type=NL domain=real eps=1e-6 name="PowerFlow_Polar"]:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{verbatim}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Sekcija varijabli (Variables)}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Za svaki čvor ID iz MATPOWER datoteke,
+ konvertor generiše parove varijabli za napon i ugao:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{$V
+\backslash
+_ID$}:
+ Modul (iznos) napona čvora.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{$delta
+\backslash
+_ID$}:
+ Fazni ugao napona čvora.
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Također,
+ definisani su i fiksni parametri elemenata matrice admitansi,
+ kao što su npr.
+ 
+\backslash
+texttt{Y
+\backslash
+_mag
+\backslash
+_i
+\backslash
+_k} i 
+\backslash
+texttt{Y
+\backslash
+_ang
+\backslash
+_i
+\backslash
+_k} za modul i ugao admitanse između čvorova $i$ i $k$.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Sekcija inicijalizacije (Init)}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Ovdje se postavlja tzv.
+ ``Flat Start'' ili početne vrijednosti iz 
+\backslash
+texttt{.m} datoteke kako bi Newton-Raphson algoritam mogao konvergirati.
+ Konvertor ovdje upisuje:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+Init:
+\end_layout
+
+\begin_layout Plain Layout
+    delta_1 = 0;
+ V_1 = 1.05
+\end_layout
+
+\begin_layout Plain Layout
+    delta_2 = 0;
+ V_2 = 1.0
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Jednačine (Equations)}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Umjesto matrica,
+ ovdje se upisuju eksplicitne tekstualne jednačine balansa snaga u polarnom obliku.
+ Svaki red predstavlja jednu jednačinu koja se mora zadovoljiti (lijeva strana 
+\backslash
+textit{lhs} jednaka desnoj strani 
+\backslash
+textit{rhs}).
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textbf{Transformacija i mapiranja podataka}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+konvertor vrši transformaciju podataka u 3 koraka:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textit{Normalizacija:} Vrijednosti snaga iz 
+\backslash
+texttt{.m} datoteke koje su zadate u $
+\backslash
+text{MW}$ i $
+\backslash
+text{MVAr}$ konvertor dijeli sa baznom snagom 
+\backslash
+texttt{baseMVA} i pretvara ih u jedinice ($
+\backslash
+text{p.u.}$) koje dTwin zahtijeva.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textit{Topološka transformacija:} Konvertor čita matricu grana i za svaki čvor kreira listu povezanih čvorova.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textit{Prevođenje u tekstualne jednačine:} Za svaki čvor se generiše tekstualni niz (string) koji predstavlja formulu balansa snaga spremnu za dTwin solver.
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Implementacija i analiza programskog koda
+\end_layout
+
+\begin_layout Standard
+U ovom poglavlju je analizirana softverska arhitektura projekta,
+ organizacija izvornih datoteka,
+ te integracija u funkcionalan plugin za dTwin platformu.
+\end_layout
+
+\begin_layout Subsection
+Arhitektura i organizacija projekta
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+Softverski sistem je podijeljen na dva zasebna projekta kako bi se omogućilo odvojeno testiranje i lakša integracija:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{PowerFlowConverter:} Samostalna (
+\backslash
+textit{standalone}) aplikacija koja se kompajlira u izvršni 
+\backslash
+texttt{.exe} fajl.
+ Primarno služi za interno testiranje,
+ verifikaciju algoritama i otklanjanje grešaka van dTwin okruženja.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{PowerFlowPlugin:} Dinamička biblioteka (
+\backslash
+texttt{.dll}) namijenjena za direktnu integraciju u dTwin okruženje kao izvorni dodatak (
+\backslash
+textit{plugin}).
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Struktura direktorija i organizacija izvornog koda prikazana je u nastavku:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+PowerFlowConverter/
+\end_layout
+
+\begin_layout Plain Layout
+├── CMakeLists.txt
+\end_layout
+
+\begin_layout Plain Layout
+├── powerFlowConverter.cmake
+\end_layout
+
+\begin_layout Plain Layout
+├── res/
+\end_layout
+
+\begin_layout Plain Layout
+│   ├── DevRes.xml
+\end_layout
+
+\begin_layout Plain Layout
+│   ├── main.xml
+\end_layout
+
+\begin_layout Plain Layout
+│   └── tr/
+\end_layout
+
+\begin_layout Plain Layout
+│       ├── EN/main.xml
+\end_layout
+
+\begin_layout Plain Layout
+│       └── BA/main.xml
+\end_layout
+
+\begin_layout Plain Layout
+└── src/
+\end_layout
+
+\begin_layout Plain Layout
+    ├── Converter.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── main.cpp
+\end_layout
+
+\begin_layout Plain Layout
+    ├── Application.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── MainWindow.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── MainView.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── ViewInput.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── ViewProgress.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── ViewResults.h
+\end_layout
+
+\begin_layout Plain Layout
+    ├── MenuBar.h / ToolBar.h
+\end_layout
+
+\begin_layout Plain Layout
+    └── Info.plist
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analiza koda
+\end_layout
+
+\begin_layout Standard
+Zbog složenosti i dužine koda,
+ u ovom potpoglavlju će biti analizirani samo najznačajniji dijelovi koda,
+ koji pretstavljaju suštinu procesa.
+\end_layout
+
+\begin_layout Subsubsection
+Parsiranje MATPOWER datoteka
+\end_layout
+
+\begin_layout Standard
+Kako bi se osigurale isključivo numeričke vrijednosti za dalji rad unutar dTwin modela,
+ neophodno je sve izraze parsirati i konvertovati u slučaju da su izvorno dostupni u formi razlomaka,
+ korijena i sličnih izraza.
+ U tu svrhu,
+ unutar klase Converter,
+ u funkciji evalExpr() implementiran je evaluator izraza:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},breaklines=true,frame=single,backgroundcolor={\color[gray]{0.95}},basicstyle={\ttfamily\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+// Primjer provjere i parsiranja izraza iz koda
+\end_layout
+
+\begin_layout Plain Layout
+static double evalExpr(const std::string& raw) {
+\end_layout
+
+\begin_layout Plain Layout
+    char* end = nullptr;
+\end_layout
+
+\begin_layout Plain Layout
+    double v = std::strtod(raw.c_str(),
+ &end);
+\end_layout
+
+\begin_layout Plain Layout
+    if (end && *end == '
+\backslash
+0') return v;
+ // Ako je čist broj,
+ vrati ga odmah
+\end_layout
+
+\begin_layout Plain Layout
+    
+\end_layout
+
+\begin_layout Plain Layout
+    // U suprotnom,
+ aktivira se rekurzivni evaluator za složene izraze (npr.
+ sa sqrt)
+\end_layout
+
+\begin_layout Plain Layout
+    Eval e;
+ e.p = raw.c_str();
+\end_layout
+
+\begin_layout Plain Layout
+    return e.expr();
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tokom parsiranja tekstualnih matrica mpc.bus,
+ mpc.gen i mpc.branch,
+ uklanjaju se MATLAB komentari (%) i razlučuju granice redova i kolona.
+\end_layout
+
+\begin_layout Subsubsection
+Formiranje elemenata grana i transformatora
+\end_layout
+
+\begin_layout Standard
+Nakon što se iz mpc.branch sekcije pročitaju parametri grana (otpornost r,
+ reaktansa x i šant susceptansa b),
+ program pristupa izgradnji matrice admitanse sistema prema formulama navedenim u prethodnim poglavljima.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+double r = row[2],
+ x = row[3],
+ b = row[4];
+\end_layout
+
+\begin_layout Plain Layout
+double tap = row[8];
+ double angDeg = row[9];
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+// Proračun serijske admitanse y = 1 / (r + jx)
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx y = (r == 0 && x == 0) ?
+ Cmplx(0,0) :
+ Cmplx(1.0) / Cmplx(r,
+ x);
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx bsh(0.0,
+ b / 2.0);
+ // Polovina shunt susceptanse
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+// Korekcija za transformatore sa tapom i faznim pomakom
+\end_layout
+
+\begin_layout Plain Layout
+double angRad = angDeg * M_PI / 180.0;
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx a(tap * std::cos(angRad),
+ tap * std::sin(angRad));
+ // tau = tap * e^(jphi)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx dii_f = (y + bsh) / (a * std::conj(a));
+  // Y_ii na "from" strani
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx dii_t =  y + bsh;
+                         // Y_ii na "to" strani
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx dij   = -y / std::conj(a);
+                // Y_ik element
+\end_layout
+
+\begin_layout Plain Layout
+Cmplx dji   = -y / a;
+                           // Y_ki element
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Budući da su matrice admitansi realnih sistema izrazito rijetke (većina elemenata izvan dijagonale su nule),
+ u kodu je korištena biblioteka za rijetke matrice natID sparse i objekat sparse::CmplxSolverReleaser.
+ Ovakva implementacija smanjuje količinu zauzete memorije i vrijeme izvršavanja koda.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+int estNZ = n + 2 * nBranches + 16;
+ // Procjena broja nenultih elemenata
+\end_layout
+
+\begin_layout Plain Layout
+sparse::CmplxSolverReleaser pYSolver(
+\end_layout
+
+\begin_layout Plain Layout
+    sparse::createCmplxSolver(n,
+ estNZ,
+ sparse::Symmetry::NonSymmetric,
+ sparse::SolverType::LU)
+\end_layout
+
+\begin_layout Plain Layout
+);
+\end_layout
+
+\begin_layout Plain Layout
+// Punjenje sparse solvera elementima
+\end_layout
+
+\begin_layout Plain Layout
+pYSolver->addTriple(fi,
+ fi,
+ dii_f);
+\end_layout
+
+\begin_layout Plain Layout
+pYSolver->addTriple(fi,
+ ti,
+ dij);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+// Optimizirani pristup vandijagonalnim elementima
+\end_layout
+
+\begin_layout Plain Layout
+static int64_t yijKey(int i,
+ int j) {
+\end_layout
+
+\begin_layout Plain Layout
+    return (int64_t)i * 1000000 + j;
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Generisanje .dmodl jednačina sa polarnim koordinatama
+\end_layout
+
+\begin_layout Standard
+Prilikom upisa modela u izlaznu .dmodl datoteku,
+ vrši se konverzija elemenata Ybus u polarni oblik pomoću funkcija std::abs() i std::arg():
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+double mag = std::abs(yii);
+   // Modul |Y_ik|
+\end_layout
+
+\begin_layout Plain Layout
+double ang = std::arg(yii);
+   // Ugao phi_ik u radijanima
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nakon toga,
+ generiše se tekstualni string koji predstavlja nelinearnu jednačinu balansa snaga za svaki čvor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+// Dijagonalni element:
+ |Y_ii| * V_i^2 * cos(phi_ii)
+\end_layout
+
+\begin_layout Plain Layout
+std::string lhs = YM + "_" + std::to_string(bid) + "_" + std::to_string(bid) +
+\end_layout
+
+\begin_layout Plain Layout
+                  "*" + V + "_" + std::to_string(bid) + "^2*cos(" +
+\end_layout
+
+\begin_layout Plain Layout
+                  YA + "_" + std::to_string(bid) + "_" + std::to_string(bid) + ")";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+// Vandijagonalna suma po susjednim čvorovima:
+ V_i * sum |Y_ik| * V_k * cos(delta_i - phi_ik - delta_k)
+\end_layout
+
+\begin_layout Plain Layout
+lhs += " + " + V + "_" + std::to_string(bid) + " * (
+\backslash
+";
+\end_layout
+
+\begin_layout Plain Layout
+for (int j :
+ adj) {
+\end_layout
+
+\begin_layout Plain Layout
+    int bj = idxToId[j];
+\end_layout
+
+\begin_layout Plain Layout
+    std::string term = YM + "_" + std::to_string(bid) + "_" + std::to_string(bj) +
+\end_layout
+
+\begin_layout Plain Layout
+                       "*" + V + "_" + std::to_string(bj) +
+\end_layout
+
+\begin_layout Plain Layout
+                       "*cos(" + D + "_" + std::to_string(bid) +
+\end_layout
+
+\begin_layout Plain Layout
+                       "-" + YA + "_" + std::to_string(bid) + "_" + std::to_string(bj) +
+\end_layout
+
+\begin_layout Plain Layout
+                       "-" + D + "_" + std::to_string(bj) + ")";
+\end_layout
+
+\begin_layout Plain Layout
+    lhs += first ?
+ term :
+ " + " + term;
+\end_layout
+
+\begin_layout Plain Layout
+    first = false;
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Multithread-ing i real-time indikator konverzije
+\end_layout
+
+\begin_layout Standard
+Proces konverzije složenih mreža može trajati duže što bi u slučaju standardne arhitekture uzrokovalo blokiranje rada korisničkog interface-a.
+ Kako bi se to izbjeglo,
+ implementirani program je podijeljen u 2 niti (threads).
+ Radnu nit koja izvršava pozadinsku metodu Converter::convert(),
+ obavlja parsiranje,
+ gradi Ybus matricu i generiše .dmodl datoteku,
+ te korisničku nit koja uravlja prozorima i grafičkim elementima.
+ Unutar MainWindow klase instanciran je periodični tajmer (td::Timer) koji se okida svakih 100 ms.
+\end_layout
+
+\begin_layout Standard
+Radna nit asinhrono inkrementira progressPercent,
+ dok GUI nit preko tajmera čita to stanje i osvježava Progress Bar.
+ Za prenos finalnih rezultata ili poruka o greškama iz radne niti nazad u glavnu nit koristi se funkcija
+\end_layout
+
+\begin_layout Standard
+gui::thread::asyncExecInMainThread().
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+std::atomic<int> progressPercent{ 0 };
+\end_layout
+
+\begin_layout Plain Layout
+std::atomic<bool> stopRequested{ false };
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+GUI
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+Grafički korisnički interface je realizovan upotrebom 
+\backslash
+texttt{natID GUI} funkcija,
+ te XML definisanjem izgleda prozora.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+U samostalnoj (
+\backslash
+textit{standalone}) aplikaciji,
+ centralni prozor 
+\backslash
+texttt{MainWindow} sadrži kontejner 
+\backslash
+texttt{MainView} koji je podijeljen na tri tab-a:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{ViewInput:} Sadrži kontrole za odabir ulaznog 
+\backslash
+texttt{.m} file-a i izlazne putanje za 
+\backslash
+texttt{.dmodl},
+ kao i napredne opcije za konfiguraciju proračuna:
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+        
+\backslash
+item 
+\backslash
+textit{Flat Start:} Postavlja početne vrijednosti napona svih čvorova na $1.0
+\backslash
+text{ p.u.}$ i uglove na $0^
+\backslash
+circ$,
+ zanemarujući početne procjene iz datoteke.
+\end_layout
+
+\begin_layout Plain Layout
+        
+\backslash
+item 
+\backslash
+textit{Zero Loads:} Privremeno postavlja aktivnu i reaktivnu snagu svih potrošača na nulu,
+ što omogućava testiranje ponašanja mreže u režimu praznog hoda.
+\end_layout
+
+\begin_layout Plain Layout
+        
+\backslash
+item 
+\backslash
+textit{Naponska ograničenja:} Aktivira kontrolu i provjeru minimalnih i maksimalnih dozvoljenih vrijednosti napona na sabirnicama tokom proračuna.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{ViewProgress:} Prikazuje grafički 
+\backslash
+textit{progress bar} i tekstualni log prozor sa detaljnim ispisom faza konverzije u realnom vremenu.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{ViewResults:} Prikazuje konačnu statistiku mreže nakon završetka rada algoritma (ukupan broj čvorova,
+ grana i proizvodnih kapaciteta).
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+U 
+\backslash
+textit{plugin} verziji,
+ interface je optimizovan unutar klase 
+\backslash
+texttt{WindowPlugin} i koristi dinamički 
+\backslash
+texttt{TabView} prilagođen dTwin radnom prostoru.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Integracija u dTwin okruženje
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+Integracija i izvršavanje 
+\backslash
+textit{plugin}-a unutar 
+\backslash
+texttt{dTwin} okruženja se vrši sljedećim postupkom:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{enumerate}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item Kompajlirani 
+\backslash
+texttt{.dll} file se smješta u direktorij aplikacije:
+ 
+\backslash
+texttt{ba.natID/dTwin/plugins/}.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+texttt{dTwin} prilikom pokretanja skenira ovaj direktorij,
+ detektuje biblioteku,
+ učitava je u memoriju i poziva eksportovanu funkciju 
+\backslash
+texttt{getPluginInterface()}.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item Dodatak se registruje i pojavljuje u glavnom meniju 
+\backslash
+texttt{dTwin}-a pod opcijom 
+\backslash
+textbf{Model $
+\backslash
+rightarrow$ Import $
+\backslash
+rightarrow$ Konvertor tokova snaga:
+ Polarne koordinate},
+ kao što je prikazano na slici 
+\backslash
+ref{fig:pluginOtvaranje}.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item Kada korisnik pokrene konverziju i pozadinska radna nit završi generisanje,
+ aktivira se povratna funkcija 
+\backslash
+texttt{
+\backslash
+_onComplete()}.
+ Ona šalje signal 
+\backslash
+texttt{dTwin}-u da je konverzija uspješna,
+ nakon čega 
+\backslash
+texttt{dTwin} automatski preuzima novi kreirani 
+\backslash
+texttt{.dmodl} fajl,
+ učitava ga u svoj radni prostor i generiše matematički model za simulaciju.
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{enumerate}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/otvorenPlugin.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Prikaz dostupnog plugin-a u dTwin okruženju 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pluginOtvaranje"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CMake konfiguracija
+\end_layout
+
+\begin_layout Standard
+Kako bi program djelovao kao dinamička biblioteka umjesto izvršnog programa,
+ unutar CMakeLists.txt datoteke koristi se komanda add_library sa flag oznakom SHARED:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
+\end_layout
+
+\end_inset
+
+Za osiguravanje kompatibilnosti programa sa više operativnih sistema implementirana je sljedeća uslovna konfiguracija:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+if(WIN32)
+\end_layout
+
+\begin_layout Plain Layout
+    target_compile_definitions(${PROJECT_NAME} PRIVATE WINDOWS PLUGIN_EXPORTS)
+\end_layout
+
+\begin_layout Plain Layout
+elseif(APPLE)
+\end_layout
+
+\begin_layout Plain Layout
+    target_compile_definitions(${PROJECT_NAME} PRIVATE MACOS)
+\end_layout
+
+\begin_layout Plain Layout
+else()
+\end_layout
+
+\begin_layout Plain Layout
+    target_compile_definitions(${PROJECT_NAME} PRIVATE LINUX)
+\end_layout
+
+\begin_layout Plain Layout
+endif()
+\end_layout
+
+\end_inset
+
+Kako bi funkcija getPluginInterface() bila ulazna tačka za dTwin,
+ definisan je PLUGIN_EXPORTS koji na osnovu CMake definicija upravlja specifikatorima eksporta simbola zavisno od ciljanog operativnog sistema:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+#ifdef WINDOWS
+\end_layout
+
+\begin_layout Plain Layout
+    #ifdef PLUGIN_EXPORTS
+\end_layout
+
+\begin_layout Plain Layout
+        #define PLUGIN_API __declspec(dllexport)
+\end_layout
+
+\begin_layout Plain Layout
+    #else
+\end_layout
+
+\begin_layout Plain Layout
+        #define PLUGIN_API __declspec(dllimport)
+\end_layout
+
+\begin_layout Plain Layout
+    #endif
+\end_layout
+
+\begin_layout Plain Layout
+#else
+\end_layout
+
+\begin_layout Plain Layout
+    #define PLUGIN_API __attribute__((visibility("default")))
+\end_layout
+
+\begin_layout Plain Layout
+#endif
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+powerFlowConverter.cmake skripta omogućava automatsko povezivanje sa eksternim bibliotekama unutar natID sistema,
+ prvenstveno sa natGUI i MatrixLib (za operacijame sa matricama i vektorima).
+ Implementiranjem ovog CMake pristupa,
+ cijeli build sistem je u potpunosti automatizovan i nezavisan od platforme.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Rezultati i testiranje programa
+\end_layout
+
+\begin_layout Standard
+U ovom poglavlju je prikazan rad razvijenog softvera kao samostalne aplikacije i kao integrisanog dijela dTwin okruženja.
+\end_layout
+
+\begin_layout Subsection
+Samostalna aplikacija
+\end_layout
+
+\begin_layout Standard
+Prije integracije u dTwin platformu,
+ konvertor je razvijan i testiran kao 
+\begin_inset Quotes eld
+\end_inset
+
+standalone
+\begin_inset Quotes erd
+\end_inset
+
+ aplikacija kako bi se potvrdila tačnost parsera i algoritma za formiranje matrice admitansi.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pomoću alata CMake generisan je projektni fajl kompatibilan sa Visual Studio IDE odabirom odgovarajuće putanje foldera,
+ te koracima Configure,
+ Generate i Open project respektivno,
+ kao što je prikazano na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cmakeOtvaranje"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/cmakeOpen.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Prikaz procesa CMake konfiguracije i generisanja projekta 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cmakeOtvaranje"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Po otvaranju projekta unutar Visual Studio okruženja,
+ isti je potrebno postaviti kao 
+\begin_inset Quotes eld
+\end_inset
+
+Startup Project
+\begin_inset Quotes erd
+\end_inset
+
+,
+ te ga pokrenuti kompajliranjem njegovog 
+\begin_inset Quotes eld
+\end_inset
+
+main
+\begin_inset Quotes erd
+\end_inset
+
+ koda kao na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:VSotvaranje"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/standaloneVSStartanje.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Prikaz prokretanja procesa unutar Visual Studio okruženja 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:VSotvaranje"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kompajliranjem koda projekta,
+ dobija se samostalna aplikacija sa 3 odgovarajuća prozora za pokretanje konverzije,
+ praćenje toka procesa te pojednostavljeni pregled rezultata konverzije.
+ Rezultantni .dmodl file se automatki kreira i otvara,
+ te će njegova struktura biti pojašnjena u narednom potpoglavlju.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:standalonet1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+prikazuje glavni tab korisničkog interface-a,
+ koji omogućava unos željene .m datoteke pretragom file-ova na korisnikovom računaru,
+ odabir dodatnih uvjeta konverzije,
+ te pokretanje i zaustavljanje iste.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/standalonePrikazSaFile.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Glavni tab samostalne aplikacije konvertora 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:standalonet1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Na slikama 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:standalonetok"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ i 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:standalonerezultati"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ prikazani su tab-ovi kojima je moguće pratiti tok konverzije tekstualno kao i kroz real-time progress bar,
+ te numeričke podatke o analiziranoj energetskoj mreži,
+ poput broja i vrste čvorova,
+ grana i generatora.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/standaloneTokTab.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Tab za prikaz i praćenje toka konverzije 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:standalonetok"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/standalonerezultatiTab.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Tab numeričkih rezultata konverzije 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:standalonerezultati"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+dTwin plugin
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+Nakon verifikacije rada,
+ kod je kompajliran u formi dinamičke biblioteke (
+\backslash
+textit{.dll} za Windows okruženje) i pozstavljen u dTwin direktorij namijenjen za vanjske dodatke (plugins).
+ Platforma dTwin prepoznaje i učitava biblioteku,
+ otvarajući GUI prikazan na slici 8,
+ sa sljedećim opcijama:
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Input File (.m):} Polje za odabir ulazne MATPOWER datoteke koja sadrži podatke o mreži.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Output File (.dmodl):} Definisanje lokacije i naziva izlaznog fajla u kojem će se generirati dTwin model.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Konfiguracioni parametri:} Korisnik može uključiti ili isključiti ``Flat Start'' inicijalizaciju,
+ uzimanje u obzir reaktivnih ograničenja generatora,
+ te predefinisanje nultih opterećenja.
+\end_layout
+
+\begin_layout Plain Layout
+    
+\backslash
+item 
+\backslash
+textbf{Kontrole:} Dugme ``Convert'' pokreće radnu nit za konverziju,
+ dok dugme ``Cancel'' sigurno prekida proces.
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pluginOtv"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ prikazan je način pristupa i otvaranja plugin-a unutar dTwin-a.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/otvorenPlugin.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Pristup plugin-u unutar dTwin okruženja 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pluginOtv"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/pluginUneseneDatoteke.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Glavni tab konvertora 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pluginprvit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Tok konverzije sa tekstualnim praćenjem i progress bar vizualizacijom je prikazan na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:plugindrugit"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+,
+ te se nakon izvršavanja konverzije kreira i otvara odgovarajući .
+ dmodl file.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/pluginTokTab.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Tab za praćenje toka konverzije 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:plugindrugit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analiza i simulacija .dmodl file-a
+\end_layout
+
+\begin_layout Standard
+Kreirani .dmodl file po otvaranju izgleda kao na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kreirandmodl"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+,
+ te sadrži parametre mreže i odgovarajuće jednačine balansa snaga.
+ Pokretanje modela opcijom 
+\begin_inset Quotes eld
+\end_inset
+
+Solve
+\begin_inset Quotes erd
+\end_inset
+
+ rezultira proračunom i ispisom svih napona čvorova mreže,
+ u formi modula i ugla faznog pomaka veličine,
+ u donjem 
+\begin_inset Quotes eld
+\end_inset
+
+Res
+\begin_inset Quotes erd
+\end_inset
+
+ panelu vidljivom na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ispisrez"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/modelPokazna.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Kreirani dTwin model mreže 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:kreirandmodl"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename slike/modelRezultat.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+Tab za praćenje toka konverzije 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ispisrez"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Testiranje programa je moguće vršiti na različitim modelima mreža,
+ dok je u nastavku prikazan primjer koda .dmodl file-a,
+ dobijenog konverzijom case14.m:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++},frame=single,backgroundcolor={\color[gray]{0.95}}"
+inline false
+status open
+
+\begin_layout Plain Layout
+Model [type=NL domain=real eps=1e-6 name="PF in polar coordinates"]:
+\end_layout
+
+\begin_layout Plain Layout
+Vars [out=true]:
+\end_layout
+
+\begin_layout Plain Layout
+	delta_2 = delta_1;
+ V_2 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_3 = delta_1;
+ V_3 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_4 = delta_1;
+ V_4 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_5 = delta_1;
+ V_5 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_6 = delta_1;
+ V_6 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_7 = delta_1;
+ V_7 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_8 = delta_1;
+ V_8 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_9 = delta_1;
+ V_9 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_10 = delta_1;
+ V_10 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_11 = delta_1;
+ V_11 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_12 = delta_1;
+ V_12 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_13 = delta_1;
+ V_13 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+	delta_14 = delta_1;
+ V_14 = V_1
+\end_layout
+
+\begin_layout Plain Layout
+Params:
+\end_layout
+
+\begin_layout Plain Layout
+	delta_1 = 0 [out=true];
+ V_1 = 1.06 [out=true]
+\end_layout
+
+\begin_layout Plain Layout
+	Y_1_1 = 20.3590155631616;
+ phiY_1_1 = -1.27035780366569
+\end_layout
+
+\begin_layout Plain Layout
+	Y_1_2 = 16.0609192444319;
+ phiY_1_2 = 1.88731558145995
+\end_layout
+
+\begin_layout Plain Layout
+	Y_1_5 = 4.35747086940998;
+ phiY_1_5 = 1.80846157863521
+\end_layout
+
+\begin_layout Plain Layout
+	Y_2_2 = 31.7341546920484;
+ phiY_2_2 = -1.26606808897049
+\end_layout
+
+\begin_layout Plain Layout
+	Y_2_1 = 16.0609192444319;
+ phiY_2_1 = 1.88731558145995
+\end_layout
+
+\begin_layout Plain Layout
+	Y_2_3 = 4.91472112830875;
+ phiY_2_3 = 1.80384283722427
+\end_layout
+
+\begin_layout Plain Layout
+	Y_2_4 = 5.3865118176269;
+ phiY_2_4 = 1.88915717914878
+\end_layout
+
+\begin_layout Plain Layout
+	Y_2_5 = 5.46541471274985;
+ phiY_2_5 = 1.8873100601241
+\end_layout
+
+\begin_layout Plain Layout
+	Y_3_3 = 10.3062971325906;
+ phiY_3_3 = -1.26314185340885
+\end_layout
+
+\begin_layout Plain Layout
+	Y_3_2 = 4.91472112830875;
+ phiY_3_2 = 1.80384283722427
+\end_layout
+
+\begin_layout Plain Layout
+	Y_3_4 = 5.44398797507477;
+ phiY_3_4 = 1.94421607304359
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_4 = 40.058306260219;
+ phiY_4_4 = -1.30524409029666
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_2 = 5.3865118176269;
+ phiY_4_2 = 1.88915717914878
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_3 = 5.44398797507477;
+ phiY_4_3 = 1.94421607304359
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_5 = 22.6369831989984;
+ phiY_4_5 = 1.87779995488015
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_7 = 4.88951266031734;
+ phiY_4_7 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_9 = 1.8554995578159;
+ phiY_4_9 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_5_5 = 36.7992730539438;
+ phiY_5_5 = -1.30776830434821
+\end_layout
+
+\begin_layout Plain Layout
+	Y_5_1 = 4.35747086940998;
+ phiY_5_1 = 1.80846157863521
+\end_layout
+
+\begin_layout Plain Layout
+	Y_5_2 = 5.46541471274985;
+ phiY_5_2 = 1.8873100601241
+\end_layout
+
+\begin_layout Plain Layout
+	Y_5_4 = 22.6369831989984;
+ phiY_5_4 = 1.87779995488015
+\end_layout
+
+\begin_layout Plain Layout
+	Y_5_6 = 4.25744533525338;
+ phiY_5_6 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_6_6 = 18.547140114668;
+ phiY_6_6 = -1.20813089588316
+\end_layout
+
+\begin_layout Plain Layout
+	Y_6_5 = 4.25744533525338;
+ phiY_6_5 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_6_11 = 4.53691320382116;
+ phiY_6_11 = 2.0163039557173
+\end_layout
+
+\begin_layout Plain Layout
+	Y_6_12 = 3.52353852490387;
+ phiY_6_12 = 2.01870129996994
+\end_layout
+
+\begin_layout Plain Layout
+	Y_6_13 = 6.84448501457259;
+ phiY_6_13 = 2.04065769769006
+\end_layout
+
+\begin_layout Plain Layout
+	Y_7_7 = 19.5490059482647;
+ phiY_7_7 = -1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_7_4 = 4.88951266031734;
+ phiY_7_4 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_7_8 = 5.67697984672154;
+ phiY_7_8 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_7_9 = 9.09008271975275;
+ phiY_7_9 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_8_8 = 5.67697984672154;
+ phiY_8_8 = -1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_8_7 = 5.67697984672154;
+ phiY_8_7 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_9_9 = 24.6741914908221;
+ phiY_9_9 = -1.35322863005945
+\end_layout
+
+\begin_layout Plain Layout
+	Y_9_4 = 1.8554995578159;
+ phiY_9_4 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_9_7 = 9.09008271975275;
+ phiY_9_7 = 1.5707963267949
+\end_layout
+
+\begin_layout Plain Layout
+	Y_9_10 = 11.0755309633021;
+ phiY_9_10 = 1.93083736439992
+\end_layout
+
+\begin_layout Plain Layout
+	Y_9_14 = 3.34707906953128;
+ phiY_9_14 = 2.01025233051656
+\end_layout
+
+\begin_layout Plain Layout
+	Y_10_10 = 15.8602059515102;
+ phiY_10_10 = -1.19757259820288
+\end_layout
+
+\begin_layout Plain Layout
+	Y_10_9 = 11.0755309633021;
+ phiY_10_9 = 1.93083736439992
+\end_layout
+
+\begin_layout Plain Layout
+	Y_10_11 = 4.78786394100919;
+ phiY_10_11 = 1.97451877297019
+\end_layout
+
+\begin_layout Plain Layout
+	Y_11_11 = 9.32274355859266;
+ phiY_11_11 = -1.1467436376609
+\end_layout
+
+\begin_layout Plain Layout
+	Y_11_6 = 4.53691320382116;
+ phiY_11_6 = 2.0163039557173
+\end_layout
+
+\begin_layout Plain Layout
+	Y_11_10 = 4.78786394100919;
+ phiY_11_10 = 1.97451877297019
+\end_layout
+
+\begin_layout Plain Layout
+	Y_12_12 = 6.75149452557881;
+ phiY_12_12 = -0.93392632180126
+\end_layout
+
+\begin_layout Plain Layout
+	Y_12_6 = 3.52353852490387;
+ phiY_12_6 = 2.01870129996994
+\end_layout
+
+\begin_layout Plain Layout
+	Y_12_13 = 3.35658056818654;
+ phiY_12_13 = 2.40615288591429
+\end_layout
+
+\begin_layout Plain Layout
+	Y_13_13 = 12.6121870085797;
+ phiY_13_13 = -1.00840569662484
+\end_layout
+
+\begin_layout Plain Layout
+	Y_13_6 = 6.84448501457259;
+ phiY_13_6 = 2.04065769769006
+\end_layout
+
+\begin_layout Plain Layout
+	Y_13_12 = 3.35658056818654;
+ phiY_13_12 = 2.40615288591429
+\end_layout
+
+\begin_layout Plain Layout
+	Y_13_14 = 2.57911062305547;
+ phiY_13_14 = 2.02733884987258
+\end_layout
+
+\begin_layout Plain Layout
+	Y_14_14 = 5.92597705754879;
+ phiY_14_14 = -1.12390420156478
+\end_layout
+
+\begin_layout Plain Layout
+	Y_14_9 = 3.34707906953128;
+ phiY_14_9 = 2.01025233051656
+\end_layout
+
+\begin_layout Plain Layout
+	Y_14_13 = 2.57911062305547;
+ phiY_14_13 = 2.02733884987258
+\end_layout
+
+\begin_layout Plain Layout
+	P_2_g = 0.183
+\end_layout
+
+\begin_layout Plain Layout
+	P_3_g = -0.942
+\end_layout
+
+\begin_layout Plain Layout
+	P_4 = -0.478
+\end_layout
+
+\begin_layout Plain Layout
+	Q_4 = 0.039
+\end_layout
+
+\begin_layout Plain Layout
+	P_5 = -0.076
+\end_layout
+
+\begin_layout Plain Layout
+	Q_5 = -0.016
+\end_layout
+
+\begin_layout Plain Layout
+	P_6_g = -0.112
+\end_layout
+
+\begin_layout Plain Layout
+	P_8_g = 0
+\end_layout
+
+\begin_layout Plain Layout
+	P_9 = -0.295
+\end_layout
+
+\begin_layout Plain Layout
+	Q_9 = -0.166
+\end_layout
+
+\begin_layout Plain Layout
+	P_10 = -0.09
+\end_layout
+
+\begin_layout Plain Layout
+	Q_10 = -0.058
+\end_layout
+
+\begin_layout Plain Layout
+	P_11 = -0.035
+\end_layout
+
+\begin_layout Plain Layout
+	Q_11 = -0.018
+\end_layout
+
+\begin_layout Plain Layout
+	P_12 = -0.061
+\end_layout
+
+\begin_layout Plain Layout
+	Q_12 = -0.016
+\end_layout
+
+\begin_layout Plain Layout
+	P_13 = -0.135
+\end_layout
+
+\begin_layout Plain Layout
+	Q_13 = -0.058
+\end_layout
+
+\begin_layout Plain Layout
+	P_14 = -0.149
+\end_layout
+
+\begin_layout Plain Layout
+	Q_14 = -0.05
+\end_layout
+
+\begin_layout Plain Layout
+	V_2_sp = 1.045
+\end_layout
+
+\begin_layout Plain Layout
+	V_3_sp = 1.01
+\end_layout
+
+\begin_layout Plain Layout
+	V_6_sp = 1.07
+\end_layout
+
+\begin_layout Plain Layout
+	V_8_sp = 1.09
+\end_layout
+
+\begin_layout Plain Layout
+NLEs:
+\end_layout
+
+\begin_layout Plain Layout
+	Y_2_2*V_2^2*cos(phiY_2_2) + V_2 * (Y_2_1*V_1*cos(delta_2-phiY_2_1-delta_1) + Y_2_3*V_3*cos(delta_2-phiY_2_3-delta_3) + Y_2_4*V_4*cos(delta_2-phiY_2_4-delta_4) + Y_2_5*V_5*cos(delta_2-phiY_2_5-delta_5)) = P_2_g
+\end_layout
+
+\begin_layout Plain Layout
+	V_2=V_2_sp
+\end_layout
+
+\begin_layout Plain Layout
+	Y_3_3*V_3^2*cos(phiY_3_3) + V_3 * (Y_3_2*V_2*cos(delta_3-phiY_3_2-delta_2) + Y_3_4*V_4*cos(delta_3-phiY_3_4-delta_4)) = P_3_g
+\end_layout
+
+\begin_layout Plain Layout
+	V_3=V_3_sp
+\end_layout
+
+\begin_layout Plain Layout
+	Y_4_4*V_4^2*cos(phiY_4_4) + V_4 * (Y_4_2*V_2*cos(delta_4-phiY_4_2-delta_2) + Y_4_3*V_3*cos(delta_4-phiY_4_3-delta_3) + Y_4_5*V_5*cos(delta_4-phiY_4_5-delta_5) + Y_4_7*V_7*cos(delta_4-phiY_4_7-delta_7) + Y_4_9*V_9*cos(delta_4-phiY_4_9-delta_9)) = P_4
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_4_4*V_4^2*sin(phiY_4_4) + V_4 * (Y_4_2*V_2*sin(delta_4-phiY_4_2-delta_2) + Y_4_3*V_3*sin(delta_4-phiY_4_3-delta_3) + Y_4_5*V_5*sin(delta_4-phiY_4_5-delta_5) + Y_4_7*V_7*sin(delta_4-phiY_4_7-delta_7) + Y_4_9*V_9*sin(delta_4-phiY_4_9-delta_9)) = Q_4
+\end_layout
+
+\begin_layout Plain Layout
+	Y_5_5*V_5^2*cos(phiY_5_5) + V_5 * (Y_5_1*V_1*cos(delta_5-phiY_5_1-delta_1) + Y_5_2*V_2*cos(delta_5-phiY_5_2-delta_2) + Y_5_4*V_4*cos(delta_5-phiY_5_4-delta_4) + Y_5_6*V_6*cos(delta_5-phiY_5_6-delta_6)) = P_5
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_5_5*V_5^2*sin(phiY_5_5) + V_5 * (Y_5_1*V_1*sin(delta_5-phiY_5_1-delta_1) + Y_5_2*V_2*sin(delta_5-phiY_5_2-delta_2) + Y_5_4*V_4*sin(delta_5-phiY_5_4-delta_4) + Y_5_6*V_6*sin(delta_5-phiY_5_6-delta_6)) = Q_5
+\end_layout
+
+\begin_layout Plain Layout
+	Y_6_6*V_6^2*cos(phiY_6_6) + V_6 * (Y_6_5*V_5*cos(delta_6-phiY_6_5-delta_5) + Y_6_11*V_11*cos(delta_6-phiY_6_11-delta_11) + Y_6_12*V_12*cos(delta_6-phiY_6_12-delta_12) + Y_6_13*V_13*cos(delta_6-phiY_6_13-delta_13)) = P_6_g
+\end_layout
+
+\begin_layout Plain Layout
+	V_6=V_6_sp
+\end_layout
+
+\begin_layout Plain Layout
+	Y_7_7*V_7^2*cos(phiY_7_7) + V_7 * (Y_7_4*V_4*cos(delta_7-phiY_7_4-delta_4) + Y_7_8*V_8*cos(delta_7-phiY_7_8-delta_8) + Y_7_9*V_9*cos(delta_7-phiY_7_9-delta_9)) = 0
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_7_7*V_7^2*sin(phiY_7_7) + V_7 * (Y_7_4*V_4*sin(delta_7-phiY_7_4-delta_4) + Y_7_8*V_8*sin(delta_7-phiY_7_8-delta_8) + Y_7_9*V_9*sin(delta_7-phiY_7_9-delta_9)) = 0
+\end_layout
+
+\begin_layout Plain Layout
+	Y_8_8*V_8^2*cos(phiY_8_8) + V_8 * (Y_8_7*V_7*cos(delta_8-phiY_8_7-delta_7)) = 0
+\end_layout
+
+\begin_layout Plain Layout
+	V_8=V_8_sp
+\end_layout
+
+\begin_layout Plain Layout
+	Y_9_9*V_9^2*cos(phiY_9_9) + V_9 * (Y_9_4*V_4*cos(delta_9-phiY_9_4-delta_4) + Y_9_7*V_7*cos(delta_9-phiY_9_7-delta_7) + Y_9_10*V_10*cos(delta_9-phiY_9_10-delta_10) + Y_9_14*V_14*cos(delta_9-phiY_9_14-delta_14)) = P_9
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_9_9*V_9^2*sin(phiY_9_9) + V_9 * (Y_9_4*V_4*sin(delta_9-phiY_9_4-delta_4) + Y_9_7*V_7*sin(delta_9-phiY_9_7-delta_7) + Y_9_10*V_10*sin(delta_9-phiY_9_10-delta_10) + Y_9_14*V_14*sin(delta_9-phiY_9_14-delta_14)) = Q_9
+\end_layout
+
+\begin_layout Plain Layout
+	Y_10_10*V_10^2*cos(phiY_10_10) + V_10 * (Y_10_9*V_9*cos(delta_10-phiY_10_9-delta_9) + Y_10_11*V_11*cos(delta_10-phiY_10_11-delta_11)) = P_10
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_10_10*V_10^2*sin(phiY_10_10) + V_10 * (Y_10_9*V_9*sin(delta_10-phiY_10_9-delta_9) + Y_10_11*V_11*sin(delta_10-phiY_10_11-delta_11)) = Q_10
+\end_layout
+
+\begin_layout Plain Layout
+	Y_11_11*V_11^2*cos(phiY_11_11) + V_11 * (Y_11_6*V_6*cos(delta_11-phiY_11_6-delta_6) + Y_11_10*V_10*cos(delta_11-phiY_11_10-delta_10)) = P_11
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_11_11*V_11^2*sin(phiY_11_11) + V_11 * (Y_11_6*V_6*sin(delta_11-phiY_11_6-delta_6) + Y_11_10*V_10*sin(delta_11-phiY_11_10-delta_10)) = Q_11
+\end_layout
+
+\begin_layout Plain Layout
+	Y_12_12*V_12^2*cos(phiY_12_12) + V_12 * (Y_12_6*V_6*cos(delta_12-phiY_12_6-delta_6) + Y_12_13*V_13*cos(delta_12-phiY_12_13-delta_13)) = P_12
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_12_12*V_12^2*sin(phiY_12_12) + V_12 * (Y_12_6*V_6*sin(delta_12-phiY_12_6-delta_6) + Y_12_13*V_13*sin(delta_12-phiY_12_13-delta_13)) = Q_12
+\end_layout
+
+\begin_layout Plain Layout
+	Y_13_13*V_13^2*cos(phiY_13_13) + V_13 * (Y_13_6*V_6*cos(delta_13-phiY_13_6-delta_6) + Y_13_12*V_12*cos(delta_13-phiY_13_12-delta_12) + Y_13_14*V_14*cos(delta_13-phiY_13_14-delta_14)) = P_13
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_13_13*V_13^2*sin(phiY_13_13) + V_13 * (Y_13_6*V_6*sin(delta_13-phiY_13_6-delta_6) + Y_13_12*V_12*sin(delta_13-phiY_13_12-delta_12) + Y_13_14*V_14*sin(delta_13-phiY_13_14-delta_14)) = Q_13
+\end_layout
+
+\begin_layout Plain Layout
+	Y_14_14*V_14^2*cos(phiY_14_14) + V_14 * (Y_14_9*V_9*cos(delta_14-phiY_14_9-delta_9) + Y_14_13*V_13*cos(delta_14-phiY_14_13-delta_13)) = P_14
+\end_layout
+
+\begin_layout Plain Layout
+	-Y_14_14*V_14^2*sin(phiY_14_14) + V_14 * (Y_14_9*V_9*sin(delta_14-phiY_14_9-delta_9) + Y_14_13*V_13*sin(delta_14-phiY_14_13-delta_13)) = Q_14
+\end_layout
+
+\begin_layout Plain Layout
+end
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Zaključak
+\end_layout
+
+\begin_layout Standard
+U okviru ovog zadatka uspješno je projektovan i implementiran softverski konvertor tokova snaga iz .m formata u .dmodl format modela.
+ Kroz realizaciju zadatka su povezani teorijski koncepti i softverska implementacija.
+\end_layout
+
+\begin_layout Standard
+Primjenom programskog jezika C++ i korištenjem multithreaded arhitekture,
+ procesi parsiranja i matematičkog generisanja jednačina u polarnim koordinatama su odvojeni od grafičkog korisničkog interface-a,
+ čime je obezbijeđena stabilnost i rad aplikacije u realnom vremenu uz vizuelni prikaz napretka konverzije.
+ Implementacija cross-platform podrške kroz CMake obezbjeđuje prenosivost rješenja,
+ dok integracija natID sparse solver modula minimizira potrebu zauzimanja memorije.
+\end_layout
+
+\begin_layout Standard
+Konačni rezultati testiranja na MATPOWER modelima standardnih mreža potvrđuju da generisani modeli omogućavaju dTwin okruženju stabilnu i brzu konvergenciju ka naponima čvorova,
+ čineći ovaj plugin funkcionalnim alatom u elektroenergetskoj analizi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{thebibliography}{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+bibitem{predavanja}
+\end_layout
+
+\begin_layout Plain Layout
+Predavanja iz predmeta 
+\backslash
+textit{Strukture i režimi rada elektroenergetskih sistema},
+ Elektrotehnički fakultet,
+ Univerzitet u Sarajevu,
+ 2026.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+bibitem{natid}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textit{natID},I.
+ Džafić,
+ GitHub repozitorij,
+ dostupno na:
+ 
+\backslash
+url{https://github.com/idzafic/natID}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+bibitem{dtwin}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textit{dTwin},
+ I.
+ Džafić,
+ GitHub repozitorij,
+ dostupno na:
+ 
+\backslash
+url{https://github.com/idzafic/dTwin}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+bibitem{matpower}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+textit{MATPOWER},
+ dostupno na:
+ 
+\backslash
+url{https://matpower.org/}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{thebibliography}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
